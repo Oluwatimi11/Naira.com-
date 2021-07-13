@@ -1,0 +1,149 @@
+
+.search {
+    flex: 0 0 40%;
+
+    &__input {
+        font-family: inherit;
+        font-size: inherit;
+        color: inherit;
+        background-color: $color-grey-light;
+        border: none;
+        padding: .3rem 2rem;
+        border-radius: 100px;
+        width: 60%;
+        transition: all .2s;
+        margin-right: -3.5rem;
+        align-self: center;
+
+        &:focus {
+            outline: none;
+            width: 80%;
+            background-color: $color-grey-light-2;
+        }
+    }
+
+    &__button {
+        border: none;
+        background-color: $color-grey-light;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:active {
+            transform: translateY(2px);
+        }
+    }
+
+    &__icon {
+        height: 2rem;
+        width: 4rem;
+    }
+}
+
+.platform {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 3rem;
+
+
+    &__icn {
+        display: inline-block;
+        margin: 2rem 3rem;
+        padding: 0 0;
+        height: 8rem;
+        width: 8rem;
+        border-radius: 50%;
+        align-content: center;
+        justify-content: center;
+        position: relative;
+
+        &-1 {
+            background-color: $color-primary-light;
+            border: 5px solid $color-grey;
+        }
+        &-2 {
+            background-color: $color-secondary-dark;
+            border: 5px solid $color-grey;
+        }
+        &-3 {
+            background-color: $color-primary-dark;
+            border: 5px solid $color-grey;
+        }
+        &-4 {
+            background-color: $color-secondary-dark-1;
+            border: 5px solid $color-grey;
+        }
+        &-5 {
+            background-color: $componentscolor;
+            border: 5px solid $color-grey;
+        }
+        &-6 {
+            background-color: $color-secondary-dark-1;
+            border: 5px solid $color-grey;
+        }
+        &-7 {
+            background-color: $color-primary-light;
+            border: 5px solid $color-grey;
+        }
+        &-8 {
+            background-color: $color-black;
+            border: 5px solid $color-grey;
+        }
+
+        &:hover {
+             animation: moveInTop 1s ease-out; 
+        }
+    }
+
+    &__icon {
+        height: 2.5rem;
+        width: 2.5rem;
+        fill: $color-white;
+        position: absolute;
+        top: 1rem;
+        left: 3rem;
+
+        &--name {
+            color: $color-white;
+            font-size: .9rem;
+            font-weight: 900;
+            place-content: center;
+            position: absolute;
+            top: 3rem;
+            left: 1.5rem;
+
+            // display: grid;
+            // place-content: center;
+            // margin-right: 2rem;
+            // text-indent: 0;
+            &-1 {
+                position: absolute;
+                top: 3rem;
+                left: .5rem;
+                padding-top: .3rem;
+            }
+            &-2 {
+                position: absolute;
+                top: 3rem;
+                left: .5rem;
+                padding-top: .3rem;
+            }
+            &-3 {
+                position: absolute;
+                top: 3rem;
+                left: 2rem;
+            }
+            &-4 {
+                position: absolute;
+                top: 3rem;
+                left: 1.8rem;
+            }
+            &-7 {
+                position: absolute;
+                top: 3rem;
+                left: 2rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,83 @@
+.jumbotron-section {
+    color: $color-black;
+    font-size: 1rem;
+    font-weight: 900rem;
+
+    &__header {
+        font-size: 2rem;
+        color: $color-black;
+
+        &:hover {
+            color: $color-secondary-light;
+        }
+    }
+
+    .jumbotron {
+        display: flex;
+
+
+        &__icn {
+            display: flex;
+            padding: .5rem;
+        }
+    
+        &__icon {
+            height: 1.5rem;
+            width: 1.5rem;
+            margin-right: 1rem;
+            fill: $color-secondary-dark-1;
+            background-color: $color-white;
+            border-radius: 50%;
+    
+            &--name {
+                color: $color-black;
+                font-size: 1rem;
+            }
+        }
+
+        &--group-2 {
+            padding: 0 3rem;
+        }
+    }
+
+
+    &__paragraph {
+        padding: 2rem 0;
+        font-size: 1.2rem;
+        color: $color-grey-dark;
+
+        &--italic {
+            color: $componentscolor;
+        }
+    }
+
+
+
+    &__images {
+        // position: relative;
+        // height: 45rem;
+        // width: 30rem;
+
+        &--img {
+            width: 35rem;
+            height: 45rem;
+            border-radius: 2%;
+            padding-bottom: 4rem;
+            // min-width:50%; 
+            // max-height:50%; 
+            object-fit: cover; 
+            overflow: hidden;
+            position: absolute; 
+            z-index: 50;
+
+
+           &.in-view {
+             animation: moveInRight 1s ease-out;
+           }
+        }
+    }
+
+    &.in-view {
+        animation: moveInRight 1s ease-out;
+      }
+}

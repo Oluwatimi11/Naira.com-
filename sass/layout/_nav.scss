@@ -1,0 +1,35 @@
+
+.logo-box {
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+}
+
+.logo {
+    height: 3.5rem;
+} 
+
+.navigation__list {
+    display: flex;
+    background-color: transparent;
+    text-decoration: none;
+    justify-content: flex-end;
+}
+
+.navigation__item {
+    text-decoration: none;
+    font-size: 1.2rem;
+    list-style: none;
+    padding: 1rem 1.5rem;
+}
+
+.navigation__link {
+    text-decoration: none;
+    color: #fff;
+    text-align: right;
+}
+
+
+.navigation__link:hover {
+    color: $color-primary-light;
+}

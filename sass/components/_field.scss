@@ -1,0 +1,27 @@
+.naira {
+    position: relative;
+    padding-top: 5rem; 
+    padding-bottom: 10rem; 
+    line-height: 1rem;
+    align-content: center;  
+
+    &--move__head {
+        color: #000;
+        text-align: center;
+    }
+
+    &--move__para {
+        color: $color-primary-light;
+        text-align: center;
+        line-height: normal;
+        width: 100%;
+        padding: 2rem 10rem;
+    }
+
+    &--btn-group {
+        position: absolute;
+        top: 14rem;
+        left: 32rem;
+    }
+}
+

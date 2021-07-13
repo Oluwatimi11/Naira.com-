@@ -1,0 +1,95 @@
+body {
+    font-family: 'El Messiri', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #777;
+}
+
+.heading-primary {
+    color: #fff;
+    backface-visibility: hidden;
+}
+
+.heading-primary--main {
+    display: block;
+    width: 45rem;
+    height: 15rem;
+    font-size: 3.5rem;
+    font-weight: 500;
+    font-family: 'El Messiri', sans-serif;
+    padding-right: 2rem;
+    color: $color-primary-light;
+
+    /* rgb(6, 197, 6) */
+
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+
+    /*animation-delay: 3s;
+    animation-iteration-count: 3;
+    */
+}
+
+.heading-primary--sub {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: $color-black;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+
+    animation: moveInRight 1s ease-out;
+}
+
+
+.heading-secodary--main {
+    display: inline-block;
+    width: 45rem;
+    text-align: center;
+    line-height: 3rem;
+    height: 10rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-family: 'El Messiri', sans-serif;
+    color: $color-primary-light;
+
+
+    &:hover {
+        color: $color-secondary-light;
+    }
+}
+
+.heading-tertiary {
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding-bottom: 2rem;
+    display: inline-block;
+    background-image: linear-gradient(to right, $color-grey-light, $color-grey-dark);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: .2rem;
+    transition: all .2s;
+
+    &:hover {
+      transform: skewY(2deg) skewX(15deg) scale(1.1);
+      text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+    }
+  }
+
+  .heading-tertiary--main {
+    display: inline-block;
+    // width: 45rem;
+    text-align: center;
+    line-height: 3rem;
+    height: 6rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-family: 'El Messiri', sans-serif;
+    color: $color-primary-light;
+
+
+    &:hover {
+        color: $color-secondary-light;
+    }
+}

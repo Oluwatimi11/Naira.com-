@@ -1,0 +1,63 @@
+.slideshows {
+    position: relative;
+    width: 95vw;
+    background-color: $color-white;
+    display: block;
+    z-index: 100;
+
+    &__paragraph {
+        font-family: 'El Messiri', sans-serif;
+        font-size: 2.5rem;
+        font-weight: 400;
+        padding-right: 5rem;
+        text-align: center;
+        color: $color-primary-light;
+        letter-spacing: .2rem;
+        bottom: -18rem;
+        overflow: hidden;
+        z-index: 50;
+        position: absolute;
+        flex: inline;
+        float: left;
+        left: 40rem;
+    }
+
+    &__slides--img {
+        width: 30rem;
+        height: 20rem;
+        position: absolute;
+        // min-width:100%; 
+        // max-height:100%; 
+        bottom: -18rem;
+        float: left;
+        left: 8rem;
+        object-fit: cover; 
+        overflow: hidden;
+        z-index: 50;
+    }
+}
+
+.w3-button {
+    padding: .5rem .5rem;
+    background-color: $color-white;
+    width: 3rem;
+    border-radius: 3rem;
+}
+
+.w3-display-left {
+    float: left;
+    margin-top: 5rem;
+    margin-left: 3rem;
+    top: 8rem;
+    user-select: none;
+    cursor: pointer;
+}
+
+.w3-display-right {
+    float: right;
+    margin-top: 5rem;
+    margin-right: 3rem;
+    top: 8rem;
+    user-select: none;
+    cursor: pointer;
+}

@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap');
+
+  * {
+    font-family: $mainFont;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+  .section-one {
+    height: 10vh;
+    background-color: $formBackgroundColor;
+
+    .login__logo {
+      position: absolute;
+
+      &-box {
+        position: relative;
+        left: 2rem;
+      }
+    }
+  }
+
+  .login__container {
+    background-color: linear-gradient(to right, $gradientColor1, $gradeintColor2);
+    height: 100vh;
+    width: 100vw;
+    background-color: $formBackgroundColor;
+    .section-two {
+      @include enableFlex(true);
+      height: 70vh;
+      border-top: 0.05rem $newAccountButtonTextColor solid;
+      border-bottom: 0.05rem $newAccountButtonTextColor solid;
+      .social-links {
+        display: flex;
+        margin-bottom: 2rem;
+        position: relative;
+        height: 20%;
+        cursor: pointer;
+        @include enableFlex();
+        .login__container--facebook {
+          @include enableFlex();
+          position: absolute;
+          left: -10.5rem;
+          span {
+            width: 52%;
+            color: $loginWithAccountsTextColor;
+            font-size: 0.8rem;
+            padding-right: 0.4rem;
+          }
+          .login__container--icon {
+            height: 6rem;
+            width: 6.5rem;
+            border-radius: 100%;
+            border: $gradientColor1 0.1rem solid;
+            @include enableFlex();
+            cursor: pointer;
+            .login__container--image {
+              height: 4rem;
+              @include enableFlex();
+            }
+          }
+        }
+        .login__container--twitter {
+          @include enableFlex();
+          position: absolute;
+          right: -12rem;
+          span {
+            width: 50%;
+            color: $loginWithAccountsTextColor;
+            padding-left: 0.4rem;
+            font-size: 0.8rem;
+          }
+          .login__container--icon {
+            height: 6rem;
+            width: 6.3rem;
+            border-radius: 100%;
+            border: $gradientColor1 0.1rem solid;
+            @include enableFlex();
+            background-color: $formBackgroundColor;
+            box-shadow: -0.5rem 0px $formBackgroundColor;
+  
+            .login__container--image {
+              height: 4rem;
+              @include enableFlex();
+            }
+          }
+        }
+      }
+      .main-form {
+        @include enableFlex(true);
+        button {
+          @include buttonStyles($newAccountButtonColor, $gradientColor1);
+        }
+        a {
+          text-decoration: none;
+          @include enableFlex();
+          color: $pinkOutline;
+          font-weight: bold;
+          font-size: 1.5rem;
+          margin-bottom: 2rem;
+          transition: 0.3s ease-in-out;
+          &:hover {
+            color: $forgetHoverColor;
+          }
+        }
+        &--input {
+          padding: 0.8rem 1rem;
+          width: 22rem;
+          border-radius: 0.2rem;
+          border: $gradientColor1 0.01rem solid;
+          color: $inputTextColor;
+          background-color: $inputBackgroundColor;
+          margin-bottom: 0.8rem;
+          font-size: medium;
+          &::placeholder {
+            color: $inputPlaceholderColor;
+          }
+        }
+      }
+    }
+    .section-three {
+      height: 20vh;
+      @include enableFlex();
+      button {
+        @include buttonStyles($newAccountButtonColor, $newAccountButtonTextColor);
+      }
+    }
+  }
+
+  .signup__container--checkbox {
+    display: flex;
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    position: relative;
+    color: $inputTextColor;
+    margin-bottom: 2.5rem;
+}
+
+
+
+ 
+// //   @media only screen and (max-width: 768px) {
+// //     .container {
+// //       height: 35rem;
+// //       .section-one {
+// //         .social-links {
+// //           .facebook {
+// //             left: -8.2rem;
+// //             span {
+// //               font-size: small;
+// //               padding-right: 0.9rem;
+// //             }
+// //             .icon {
+// //               height: 4rem;
+// //               width: 4rem;
+// //               border-radius: 100%;
+// //               img {
+// //                 height: 3rem;
+// //               }
+// //             }
+// //           }
+// //           .twitter {
+// //             right: -10rem;
+// //             span {
+// //               font-size: small;
+// //             }
+// //             .icon {
+// //               height: 4rem;
+// //               width: 4rem;
+// //               border-radius: 100%;
+// //               img {
+// //                 height: 3rem;
+// //               }
+// //             }
+// //           }
+// //         }
+// //         .main-form {
+// //           input {
+// //             width: 15rem;
+// //           }
+// //           button {
+// //             width: 15rem;
+// //           }
+// //         }
+// //       }
+// //       .section-two {
+// //         button {
+// //           width: 15rem;
+// //         }
+// //       }
+// //     }
+// //   }
+  

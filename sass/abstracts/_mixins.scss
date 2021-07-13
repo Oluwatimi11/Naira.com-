@@ -1,0 +1,39 @@
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin enableFlex($direction: false) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @if $direction {
+      flex-direction: column;
+    }
+  }
+
+  @mixin buttonStyles($backgroundColor, $fontColor) {
+    padding: 0.8rem 1.5rem;
+    width: 15rem;
+    border-radius: 0.2rem;
+    outline: none;
+    border: none;
+    font-size: medium;
+    background-color: $backgroundColor;
+    color: $fontColor;
+    cursor: pointer;
+    transition: background 0.5s;
+    &:hover {
+      background: darken($backgroundColor, 20%)
+        radial-gradient(circle, transparent 1%, darken($backgroundColor, 20%) 1%)
+        center/15000%;
+    }
+    &:active {
+      background-color: darken($backgroundColor, 30%);
+      background-size: 100%;
+      transition: background 0s;
+    }
+  }
